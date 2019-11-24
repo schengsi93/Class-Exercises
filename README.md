@@ -1,13 +1,14 @@
 # Class-Exercises
 
+            // Write a program that takes a double precision number as input and prints the square root of the number.
             Console.Write("Please enter a number: ");
             double value = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(Math.Sqrt(value));
 
+            // Write a program that takes a double precision number as input and prints the square root of the number. The square root should be rounded to 3 decimal places.
             Console.Write("Please enter a number: ");
             double value2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"{Math.Sqrt(value2):0.000}");
-            //as the question got say round, should use the math round function, round to 3 dp
 
             Console.Write("Please enter your salary: ");
             int value3 = Convert.ToInt32(Console.ReadLine());
