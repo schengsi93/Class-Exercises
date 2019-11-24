@@ -22,13 +22,21 @@ Write a program that takes the salary as input and prints the total income
             int value3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"{value3 * 1.13:C}");
 
+Write a program that would convert temperature given in Centigrade scale to Fahrenheit – the number can be integer or real. To convert temperature in Centigrade (C) to Fahrenheit (F) use the formula: F = 1.8 * C + 32          
+            
             Console.Write("Temperature in Centigrade: ");
             int value4 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Temperature in Fahrenheit: "+ $"{value4 * 1.8 + 32}");
 
+Write a program that would take as input the value of x and calculate & output the value of y using the formula: y = 5 x2 – 4 x + 3
+
             Console.Write("Value of x: ");
             int value5 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Value of y: " + $"{5 * value5 * value5 - 4 * value5 + 3}");
+
+Write a program that reads the (x, y) coordinates of two points. Compute the distance between the two points using the formula:
+Distance = Square Root of [( x2 – x1 ) 2 + ( y2 – y1 ) 2 ]
+Note: A common question that arises is that how to get four inputs (two pairs of x and y) from the users all at once. At this moment, we haven’t learned about string manipulation and therefore you should just ask for user input four times.
 
             Console.Write("Value of x1: ");
             int x1 = Convert.ToInt32(Console.ReadLine());
