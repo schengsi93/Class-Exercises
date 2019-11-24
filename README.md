@@ -1,4 +1,5 @@
 # Class-Exercises
+# Day 1 Exercises
 
 Write a program that will print out your detail in the following format:
 Line 1: Name
