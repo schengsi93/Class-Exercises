@@ -35,7 +35,8 @@ Write a program that would take as input the value of x and calculate & output t
             Console.WriteLine("Value of y: " + $"{5 * value5 * value5 - 4 * value5 + 3}");
 
 Write a program that reads the (x, y) coordinates of two points. Compute the distance between the two points using the formula:
-Distance = Square Root of [( x2 – x1 ) 2 + ( y2 – y1 ) 2 ]
+Distance = Square Root of [( x2 – x1 )^2 + ( y2 – y1 )^2 ]
+
 Note: A common question that arises is that how to get four inputs (two pairs of x and y) from the users all at once. At this moment, we haven’t learned about string manipulation and therefore you should just ask for user input four times.
 
             Console.Write("Value of x1: ");
@@ -49,23 +50,21 @@ Note: A common question that arises is that how to get four inputs (two pairs of
             Console.WriteLine("Distance = " + $"{Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))}");
             //inside math sqrt (Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2)
 
+ABC Taxi Company has the following meter charges based on the kilometres travelled.
+Minimum fixed charge: $2.40 In addition the fare would be computed at 40 cents per kilometer.
+
             Console.Write("Distance travelled: ");
             double dist = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Total fare = " +$"{2.4 + dist * 0.4}");
+
+In the ABC Taxi Company problem above, print the output so that the fare is the output is printed always rounded to nearest 10 cents and printed to two decimal places.
 
             Console.Write("Distance travelled: ");
             double dist2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Total fare = " + $"{Math.Round(2.4 + dist2 * 0.4,1):0.00}");
 
+In the ABC Taxi Company problem above, calculate the fare so that the fare is always rounded upwards to the nearest 10 cents.
+
             Console.Write("Distance travelled: ");
             double dist3 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Total fare = " + $"{Math.Ceiling((2.4 + dist3 * 0.4)*10)/10:0.0}");
-
-            Console.Write("a: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("b: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.Write("c: ");
-            int c = Convert.ToInt32(Console.ReadLine());
-            int s = (a + b + c) / 2;
-            Console.WriteLine("Area = " + $"{Math.Sqrt(s*((s-a)*(s-b)*(s-c)))}");
