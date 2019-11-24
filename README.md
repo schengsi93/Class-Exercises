@@ -1,5 +1,38 @@
 # Class-Exercises
 
+Write a program that will print out your detail in the following format:
+Line 1: Name
+Line 2: Email
+
+            Console.WriteLine("John Smith");
+            Console.WriteLine("e0011223@u.nus.edu");
+
+Write a program that would request for your name and print a greeting like this: Good Morning John where John is the name you had input.
+
+            Console.Write("Please enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Good Morning {0}", name);
+
+Write a program that takes an integer as input and prints the square of that number.
+
+            Console.Write("Please enter an integer: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{number*number}");
+            //(number*number) will do
+
+Write a program that takes a double precision number as input and prints the square of that number.
+
+            Console.Write("Please enter a number: ");
+            double value = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{value * value}");
+            //(value*value will do)
+
+Write a program that takes a double precision number as input and prints the number with 2 decimal points in the output.
+
+            Console.Write("Please enter a number: ");
+            double value2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{value2:0.00}");
+
 Write a program that takes a double precision number as input and prints the square root of the number.
             
             Console.Write("Please enter a number: ");
