@@ -1,16 +1,5 @@
 # Class-Exercises
 
-
-
-using System;
-
-namespace Day1Exercises
-{
-    class Class1
-    {
-        static void Main(string[] args)
-        {
-            //this is section B
             Console.Write("Please enter a number: ");
             double value = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(Math.Sqrt(value));
@@ -63,6 +52,3 @@ namespace Day1Exercises
             int c = Convert.ToInt32(Console.ReadLine());
             int s = (a + b + c) / 2;
             Console.WriteLine("Area = " + $"{Math.Sqrt(s*((s-a)*(s-b)*(s-c)))}");
-        }
-    }
-}
